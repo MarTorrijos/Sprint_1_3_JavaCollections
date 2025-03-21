@@ -41,7 +41,7 @@ public class Restaurant {
 
     @Override
     public String toString() {
-        return "Restaurante " + this.name + ", puntuación de " + this.rating;
+        return this.name + ", puntuación de " + this.rating;
     }
 
 }
