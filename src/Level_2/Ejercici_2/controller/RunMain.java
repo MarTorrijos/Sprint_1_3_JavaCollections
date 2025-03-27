@@ -1,8 +1,8 @@
-package Level_2.Exercici_2.controller;
+package Level_2.Ejercici_2.controller;
 
 import Level_2.Exercici_1.model.data.RestaurantInstances;
 import Level_2.Exercici_1.model.entities.Restaurant;
-import Level_2.Exercici_2.model.RestaurantComparator;
+import Level_2.Ejercici_2.model.RestaurantComparator;
 
 import java.util.ArrayList;
 import java.util.List;

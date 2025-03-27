@@ -14,7 +14,7 @@ public class RunMain {
     static String username;
 
     public static void run() {
-        Methods.fillHashMap(getFileLocation());
+        fillHashMap(getFileLocation());
         boolean hasUsername = false;
 
         while (!hasUsername) {
@@ -32,13 +32,12 @@ public class RunMain {
 
             } catch (IOException e) {
                 System.out.println("No puedes dejar el nombre vacío >:(");
-
             }
         }
     }
 
     private static void playGame() {
-        for (int i = 0; i < 2; i++) {
+        for (int i = 1; i < 10; i++) {
 
             try {
                 System.out.print("Cual es la capital de este país? Responde con el nombre en inglés (sorry):\n"
