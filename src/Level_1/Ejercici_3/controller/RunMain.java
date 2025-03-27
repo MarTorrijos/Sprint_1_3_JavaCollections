@@ -45,6 +45,8 @@ public class RunMain {
                         + randomCountry() + " - ");
                 answer = scanner.next().trim();
 
+                // esto quizás no es buena práctica (meter un if else dentro de un try-catch)
+                // Comprobar
                 if (answer.isEmpty()) {
                     throw new IOException();
                 } else {
@@ -53,6 +55,8 @@ public class RunMain {
             } catch (IOException e) {
                 System.out.println("Responder en blanco no es una capital");
             }
+
+            // Guardar la puntuación!
         }
 
         System.out.println("Juego terminado :D Tu puntuación es de " + Methods.getPoints() + " puntos");

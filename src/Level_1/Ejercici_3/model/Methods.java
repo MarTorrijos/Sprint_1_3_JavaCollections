@@ -7,6 +7,8 @@ import java.util.*;
 public class Methods {
 
     private static final HashMap<String, String> countries = new HashMap<>();
+    // esto no hacerlo así
+    // hacer un bufferedReader
     private static final String fileLocation = "src/Level_1/Ejercici_3/resources/countries.txt";
     private static int points = 0;
     private static String selectedCountry;
