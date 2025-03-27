@@ -5,24 +5,15 @@ import Level_1.Exercici_1.model.entities.Month;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 
 public class RunMain {
 
+    private static List<Month> months = new ArrayList<>();
+
     public static void run() {
 
-        ArrayList<Month> months = new ArrayList<>();
-
-        months.add(new Month("Enero"));
-        months.add(new Month("Febrero"));
-        months.add(new Month("Marzo"));
-        months.add(new Month("Abril"));
-        months.add(new Month("Mayo"));
-        months.add(new Month("Junio"));
-        months.add(new Month("Julio"));
-        months.add(new Month("Septiembre"));
-        months.add(new Month("Octubre"));
-        months.add(new Month("Noviembre"));
-        months.add(new Month("Diciembre"));
+        createMonthList();
 
         System.out.println("Antes de añadir agosto:");
         for (Month month : months) {
@@ -47,6 +38,14 @@ public class RunMain {
 
         while (iterator.hasNext()) {
             System.out.println("- " + iterator.next());
+        }
+    }
+
+    public static void createMonthList() {
+        String[] monthNames = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+                "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+        for (String monthName : monthNames) {
+            months.add(new Month(monthName));
         }
     }
 
