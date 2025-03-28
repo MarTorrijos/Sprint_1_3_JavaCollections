@@ -1,11 +1,12 @@
 package Level_1.Exercici_3;
 
-import Level_1.Exercici_3.controller.RunMain;
+import Level_1.Exercici_3.controller.GameController;
 
 public class Main {
 
     public static void main(String[] args) {
-        RunMain.run();
+        GameController gameController = new GameController();
+        gameController.run();
     }
 
 }

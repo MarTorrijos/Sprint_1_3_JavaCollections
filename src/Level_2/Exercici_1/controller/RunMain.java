@@ -21,7 +21,6 @@ public class RunMain {
 
         RestaurantInstances.loadRestaurantData(restaurants);
 
-        // Testing
         System.out.println("_________Restaurantes iniciales________");
         for (Restaurant restaurant : restaurants) {
             System.out.println("- " + restaurant);
