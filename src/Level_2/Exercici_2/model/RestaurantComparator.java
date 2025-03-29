@@ -1,4 +1,4 @@
-package Level_2.Ejercici_2.model;
+package Level_2.Exercici_2.model;
 
 import Level_2.Exercici_1.model.entities.Restaurant;
 
