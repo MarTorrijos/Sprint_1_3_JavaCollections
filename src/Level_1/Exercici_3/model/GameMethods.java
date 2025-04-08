@@ -8,11 +8,11 @@ import java.util.*;
 
 public class GameMethods {
 
-    private HashMap<String, String> countries = new HashMap<>();
+    private final HashMap<String, String> countries = new HashMap<>();
     private final Path FILELOCATION = Paths.get("src", "Level_1", "Exercici_3", "resources", "countries.txt");
     private int points = 0;
     private String selectedCountry, username;
-    private Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
 
     public int getPoints() {
         return points;
@@ -40,43 +40,30 @@ public class GameMethods {
         boolean hasUsername = false;
 
         while (!hasUsername) {
-            try {
-                System.out.print("Dime tu nombre de usuario: ");
-                username = scanner.nextLine();
+            System.out.print("Dime tu nombre de usuario: ");
+            username = scanner.nextLine().trim();
 
-                if (username.isEmpty()) {
-                    throw new IOException();
-                }
-
+            if (username.isEmpty()) {
+                System.out.println("No puedes dejar el nombre de usuario en blanco");
+            } else {
                 hasUsername = true;
                 System.out.println("De acuerdo, " + username + ".");
-
-            } catch (IOException e) {
-                System.out.println("No puedes dejar el nombre vacío >:(");
             }
         }
     }
 
     public void playGame() {
         for (int i = 1; i < 10; i++) {
+            System.out.print("¿Cuál es la capital de este país? Responde con el nombre en inglés (sorry):\n"
+                    + randomCountry() + " - ");
+            String answer = scanner.nextLine().trim();
 
-            try {
-                System.out.print("Cual es la capital de este país? Responde con el nombre en inglés (sorry):\n"
-                        + randomCountry() + " - ");
-                String answer = scanner.nextLine().trim();
-
-                if (answer.isEmpty()) {
-                    throw new IOException("Responder en blanco no es una opción");
-                } else {
-                    System.out.println(checkAnswer(answer));
-                }
-            } catch (IOException e) {
-                System.out.println(e.getMessage());
+            if (answer.isEmpty()) {
+                System.out.println("Responder en blanco no es una opción");
+            } else {
+                System.out.println(checkAnswer(answer));
             }
-
         }
-
-        scanner.close();
     }
 
     public String randomCountry() {
@@ -98,7 +85,6 @@ public class GameMethods {
         } else {
             message = "Capital incorrecta";
         }
-
         return message;
     }
 

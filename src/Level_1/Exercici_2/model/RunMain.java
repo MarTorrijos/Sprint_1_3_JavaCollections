@@ -1,4 +1,4 @@
-package Level_1.Exercici_2.controller;
+package Level_1.Exercici_2.model;
 
 import java.util.ArrayList;
 import java.util.List;

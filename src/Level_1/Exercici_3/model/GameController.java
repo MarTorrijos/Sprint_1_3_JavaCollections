@@ -1,10 +1,8 @@
-package Level_1.Exercici_3.controller;
-
-import Level_1.Exercici_3.model.GameMethods;
+package Level_1.Exercici_3.model;
 
 public class GameController {
 
-    private GameMethods gameMethods;
+    private final GameMethods gameMethods;
 
     public GameController() {
         this.gameMethods = new GameMethods();

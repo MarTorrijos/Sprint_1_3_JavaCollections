@@ -1,4 +1,4 @@
-package Level_2.Exercici_1.model.entities;
+package Level_2.Exercici_1.model;
 
 import java.util.HashSet;
 

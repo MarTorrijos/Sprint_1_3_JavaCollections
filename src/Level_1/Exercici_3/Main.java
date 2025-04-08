@@ -1,6 +1,6 @@
 package Level_1.Exercici_3;
 
-import Level_1.Exercici_3.controller.GameController;
+import Level_1.Exercici_3.model.GameController;
 
 public class Main {
 

@@ -1,6 +1,6 @@
 package Level_2.Exercici_1.model.data;
 
-import Level_2.Exercici_1.model.entities.Restaurant;
+import Level_2.Exercici_1.model.Restaurant;
 
 import java.util.HashSet;
 

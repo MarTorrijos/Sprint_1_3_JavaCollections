@@ -1,6 +1,6 @@
 package Level_1.Exercici_1;
 
-import Level_1.Exercici_1.controller.RunMain;
+import Level_1.Exercici_1.model.RunMain;
 
 public class Main {
 

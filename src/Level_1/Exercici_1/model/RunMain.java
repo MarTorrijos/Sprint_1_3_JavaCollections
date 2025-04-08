@@ -1,6 +1,4 @@
-package Level_1.Exercici_1.controller;
-
-import Level_1.Exercici_1.model.entities.Month;
+package Level_1.Exercici_1.model;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -9,7 +7,7 @@ import java.util.List;
 
 public class RunMain {
 
-    private static List<Month> months = new ArrayList<>();
+    private final static List<Month> months = new ArrayList<>();
 
     public static void run() {
 

@@ -1,4 +1,4 @@
-package Level_1.Exercici_1.model.entities;
+package Level_1.Exercici_1.model;
 
 
 public class Month {
